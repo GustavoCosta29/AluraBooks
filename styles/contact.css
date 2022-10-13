@@ -1,0 +1,77 @@
+.contact {
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.contactTitle, .contactDescription {
+    background: var(--blue-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contactTitle {
+    font-size: 18px;
+    font-weight: 500;    
+}
+
+.contactDescription {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contactEmail {
+    border: 1px solid var(--blue);
+    border-radius: 24px;
+    width: 90%;  
+    padding: 1em;
+    color: var(--blue); 
+}
+
+.contactEmail::placeholder {
+    font-family: var(--font-main);
+    padding-left: 2.5em ;
+    background: url('../imagens/Email.svg') no-repeat left;
+    color: var(--blue);
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactTitle {
+        font-size: 24px;
+        margin: 0.5em 0;
+    }
+
+    .containerContact {
+      
+        width: 30%;
+        text-align: left;
+    }
+
+    .contactEmail {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .contact {
+        padding: 4em 15vw;
+       
+    } 
+
+    .contactEmail {
+        margin-left: 2em;
+        width: 25%;
+    }
+    
+}
+
+
+

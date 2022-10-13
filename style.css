@@ -1,0 +1,31 @@
+@import url('/styles/header.css');
+@import url('/styles/banner.css');
+@import url('/styles/carrossel.css');
+@import url('/styles/topics.css');
+@import url('/styles/contact.css');
+@import url('/styles/footer.css');
+
+:root {
+    --background-color: #EBECEE;
+    --white: #FFFFFF;
+    --blue: #002F52;
+    --orange: #EB9B00;
+    --blue-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-main: "Poppins";
+    --font-secondary: 'Josefin Sans';
+    --black: #000000;
+    --grey: #474646;
+    --grey-light: #858585;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+
+.headerMenuHamburguer {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('../imagens/Menu.svg');  
+    background-position: center;
+    background-repeat: no-repeat;         
+}
+
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.containerImg {
+    padding: 1em;
+}
+
+.menuList {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.containerButton {
+    display: none;
+}
+
+.containerButton:checked ~ .menuList {
+    display: block;
+}
+
+.itemListTitle,.itemList {
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.itemListTitle {
+    color: var(--orange);
+}
+
+.itemListLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--blue-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.containerTitle{
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.containerImageHeader {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerTitle, .containerTitle--negrito {
+        display: flex;
+        font-family: var(--font-secondary);
+        font-size: 30px;
+    }
+
+    .containerImageHeader {
+        display: none;
+    }
+
+    .containerTitle {
+        font-weight: 400px ;
+    }
+
+    .containerTitle--negrito {
+        font-weight: 700;
+    }
+
+    .containerButtonHidden {
+        display: none;
+    }
+
+    .options {
+        display: block;
+    }
+    
+
+    .optionsList {
+        display: flex; 
+    }
+
+    .optionsItems {
+        margin: 0 1.5em;
+        text-transform: uppercase;        
+    }
+
+    .optionsLink {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .containerImgHidden {
+        display: none;
+    }
+
+    .buttonOptionsMenu:checked ~ .menuList {
+        display: block;
+        width: auto;
+        color: var(--white);
+    }
+
+    .buttonOptionsMenu {
+        display: none;
+    }
+
+ 
+}
+
+@media screen and (min-width: 1728px) { 
+    .containerImageHeader {
+        display: block;
+        color: var(--black);
+        font-size: 20px;
+        
+    }
+
+    .containerAncoraImage {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header {
+        padding: 0 2em;
+    }
+
+    .options {
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+
+.carrosselTitle {
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--white);
+    padding: 1em 0 0.5em 0;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 80%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    margin: 1em;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.cardDescription {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.descriptionTitle {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.descriptionTitle-book {
+    color: var(--blue);
+    font-weight: 700;  
+    margin: 1em 0; 
+    font-size: 18px; 
+}
+
+.descriptionText {
+    font-size: 14px;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttonAncora {
+    padding: 1em 2.2em;
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.buttonsItems {
+    margin: 0 0.5em;
+}
+
+.descriptionStars {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrosselTitle {
+        font-size: 26px;
+        padding: 2em 0 1em 0 ;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;    
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top:60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .containerCarrossel {
+        display: flex;
+        margin: 0 15vw 3em 15vw;
+        align-items: center;
+        padding: 3em 0;
+
+    }
+
+    .swiper-pagination {
+        margin: 0 0 2em 0;    
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descriptionTitle {
+        font-size: 32px;
+    }
+
+    .descriptionText {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 45%;
+        
+    }
+  
+}
+
